@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+:root{
+    --orange: #bb7134;
+    --green: #2A9D8F;
+    --winning-blocks: rgb(128, 117, 117);
+    --draw-blocks: rgb(103, 48, 48);
+}
+
+body{
+   background-color: var(--green);
+}
+
+.container{
+    /* padding: 40px; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#playerText{
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 5px 5px rgb(78, 53, 53);
+    color: var(--orange);
+    font-size: 50px;
+}
+
+#game{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    border: 2px solid var(--orange);
+}
+
+input{
+    width: 150px;
+    height: 50px;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: var(--orange);
+    margin-top: 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 25px;
+    color: rgb(55, 38, 38);
+    transition: 200ms transform;
+}
+
+input:hover{
+    background-color: rgb(55, 38, 38);
+    color: var(--orange);
+    cursor: pointer;
+    transform: translateY(-2px);
+}
